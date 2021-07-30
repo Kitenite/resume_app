@@ -1,1 +1,6 @@
 node_modules
+dist
+# ignore all . files and . folders
+.*
+# Dont ignore .gitignore (this file)
+!/.gitignore
