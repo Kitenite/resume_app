@@ -28,47 +28,47 @@
                 {
                     "type":"education",
                     "values":[
-                                {
-                                    "type":"school",
-                                    "value":"University of Minnesota"
-                                },
-                                {
-                                    "type":"degree",
-                                    "value":"Bachelor of Science"
-                                },
-                                {
-                                    "type":"major",
-                                    "value":"Computer Science"
-                                },
-                                {
-                                    "type":"major",
-                                    "value":"Management Information Systems"
-                                },
-                                {
-                                    "type":"major",
-                                    "value":"Supply Chain and Operations Management"
-                                },
-                                {
-                                    "type":"minor",
-                                    "value":"Product Design"
-                                },
-                                {
-                                    "type":"location",
-                                    "value":"Minneapolis, MN"
-                                },
-                                {
-                                    "type":"date",
-                                    "value":"June 2020 - August 2020"
-                                },
-                                {
-                                    "type":"gpa",
-                                    "value":"3.914"
-                                },
-                                {
-                                    "type":"honors",
-                                    "value":"Dean's List"
-                                }
-                            ]
+                        {
+                            "type":"school",
+                            "value":"University of Minnesota"
+                        },
+                        {
+                            "type":"degree",
+                            "value":"Bachelor of Science"
+                        },
+                        {
+                            "type":"major",
+                            "value":"Computer Science"
+                        },
+                        {
+                            "type":"major",
+                            "value":"Management Information Systems"
+                        },
+                        {
+                            "type":"major",
+                            "value":"Supply Chain and Operations Management"
+                        },
+                        {
+                            "type":"minor",
+                            "value":"Product Design"
+                        },
+                        {
+                            "type":"location",
+                            "value":"Minneapolis, MN"
+                        },
+                        {
+                            "type":"date",
+                            "value":"June 2020 - August 2020"
+                        },
+                        {
+                            "type":"gpa",
+                            "value":"3.914"
+                        },
+                        {
+                            "type":"honors",
+                            "value":"Dean's List"
+                        }
+                    ]
                 },
                 {
                     "type":"experiences",
@@ -111,7 +111,82 @@
                                 }
                             ]
                         }
-                        
+                    ]
+                },
+                {
+                    "type":"projects",
+                    "values":[
+                        {
+                            "type":"project",
+                            "values":[
+                                {
+                                    "type":"title",
+                                    "value":"Machine Learning Digit Recognizer"
+                                },
+                                {
+                                    "type":"link",
+                                    "value":"https://madebykiet.com/projects/digit_recognizer"
+                                },
+                                {
+                                    "type":"descriptions",
+                                    "values":[
+                                        {
+                                            "type":"description",
+                                            "value":"Train model with Python and TensorFlow using MNIST dataset to recognize handwriting digit"
+                                        },
+                                        {
+                                            "type":"description",
+                                            "value":"Deploy model to production with Docker and AWS EC2, make API calls to query result"
+                                        },
+                                        {
+                                            "type":"description",
+                                            "value":"Program web client using React, Node.js and Express.js (JavaScript, HTML, CSS)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type":"skills",
+                    "values":[
+                        {
+                            "type":"skill_list",
+                            "title":"Languages",
+                            "values":[
+                                {
+                                    "type":"skill",
+                                    "value":"Python"
+                                },
+                                {
+                                    "type":"skill",
+                                    "value":"JavaScript"
+                                },
+                                {
+                                    "type":"skill",
+                                    "value":"Java"
+                                }
+                            ]
+                        },
+                        {
+                            "type":"skill_list",
+                            "title":"Tools",
+                            "values":[
+                                {
+                                    "type":"skill",
+                                    "value":"AWS"
+                                },
+                                {
+                                    "type":"skill",
+                                    "value":"Git"
+                                },
+                                {
+                                    "type":"skill",
+                                    "value":"Chrome Dev Tool"
+                                }
+                            ]
+                        }
                     ]
                 }
             ]

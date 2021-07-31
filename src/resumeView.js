@@ -6,6 +6,7 @@ const NAME_FIELD = ''
 const RESUME_FIELD = ''
 const FIELD_LIST = ''
 const FIELD_ITEM = ''
+const GROUP_FIELD_LIST = ''
 
 // TODO: ul and li stuff need to change
 export const NameField = (props) => {
@@ -17,8 +18,7 @@ export const NameField = (props) => {
 }
 
 const GroupField = (props) => {
-    console.log(props)
-    const {values} = props
+    const {values, title} = props
     const content = values.map(item => {
         const {value, type} = item
         switch (type) {
@@ -26,15 +26,19 @@ const GroupField = (props) => {
                 return <GroupField values={item.values}/>
             default:
                 return (
-                    <li>
+                    <li >
                         {item.value}
                     </li>
                 )
         }
     })
+
+    const titleField = title ? (<div>{title}</div>) : ''
+
     return (
         <li>
-            <ul>
+            {titleField}
+            <ul className={GROUP_FIELD_LIST}>
                 {content}
             </ul>
         </li>
@@ -43,15 +47,16 @@ const GroupField = (props) => {
 }
 
 const FieldItem = (props) => {
-    const { type, value, values, key} = props.item
+    const { type, value, values, title} = props.item
     // render items based on type
-
     switch (type) {
+        case 'project':
         case 'experience':
-            return <GroupField values={values}/>
+        case 'skill_list':
+            return <GroupField title={title} values={values}/>
         default:
             return (
-                <li className={FIELD_ITEM} key={key}>
+                <li className={FIELD_ITEM}>
                     {value}
                 </li>
             )
@@ -67,6 +72,10 @@ const getTitle = (type) => {
             return "Contacts"
         case 'experiences':
             return "Experiences"
+        case 'projects':
+            return "Projects"
+        case 'skills':
+            return "Skills"
         default:
             return `${type}`
     }
@@ -76,7 +85,7 @@ const ContentField = (props) => {
     const {values, type} = props.field
     const title = getTitle(type)
     const content = values.map((item, index) => {
-        return <FieldItem item={item} key={index} />
+        return <FieldItem item={item} />
     })
 
     return (
