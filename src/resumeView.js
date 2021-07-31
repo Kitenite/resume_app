@@ -1,9 +1,11 @@
 import React from 'react'
 import { getResumeByID } from './dto'
+import './resumeView.scss'
 
-const RESUME_VIEW = ''
-const NAME_FIELD = ''
-const RESUME_FIELD = ''
+const RESUME_VIEW = 'resume_view'
+const NAME_FIELD = 'name_field'
+const RESUME_FIELD = 'resume_field'
+const TITLE_FIELD_ITEM = 'title_field_item'
 const FIELD_LIST = ''
 const FIELD_ITEM = ''
 const GROUP_FIELD_LIST = ''
@@ -26,9 +28,9 @@ const GroupField = (props) => {
                 return <GroupField values={item.values}/>
             default:
                 return (
-                    <li >
+                    <div >
                         {item.value}
-                    </li>
+                    </div>
                 )
         }
     })
@@ -36,12 +38,12 @@ const GroupField = (props) => {
     const titleField = title ? (<div>{title}</div>) : ''
 
     return (
-        <li>
+        <div>
             {titleField}
-            <ul className={GROUP_FIELD_LIST}>
+            <div className={GROUP_FIELD_LIST}>
                 {content}
-            </ul>
-        </li>
+            </div>
+        </div>
         
     )
 }
@@ -56,9 +58,9 @@ const FieldItem = (props) => {
             return <GroupField title={title} values={values}/>
         default:
             return (
-                <li className={FIELD_ITEM}>
+                <div className={FIELD_ITEM}>
                     {value}
-                </li>
+                </div>
             )
     }
   
@@ -90,12 +92,12 @@ const ContentField = (props) => {
 
     return (
         <div className={RESUME_FIELD}>
-            <div>
+            <div className={TITLE_FIELD_ITEM}>
                 {title}
             </div>
-            <ul className={FIELD_LIST}>
+            <div className={FIELD_LIST}>
                 {content}
-            </ul>
+            </div>
         </div>
     )
 }

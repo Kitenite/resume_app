@@ -1,0 +1,30 @@
+
+.resume_view {
+    display: block;
+    width: calc(100 / 23 * 21vh);
+    height: calc(100 / 23 * 29.7vh);
+    margin: calc(100 / 23 * 1vh) auto;
+    padding: calc(100 / 23 * 1vh);
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.name_field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(57, 162, 248);
+}
+
+.resume_field {
+    margin: calc(100 / 23 * 1vh) auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 1px solid rgb(57, 162, 248);
+}
+
+.title_field_item {
+    border-bottom: 1px solid rgb(57, 162, 248);
+}
