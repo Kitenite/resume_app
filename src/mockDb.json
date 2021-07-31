@@ -1,0 +1,121 @@
+{
+    "resumes":[
+        {  
+            "id":"0",
+            "name":"Kiet Ho",
+            "fields":[
+                {
+                    "type":"contacts",
+                    "values":[
+                        {
+                            "type":"website",
+                            "value":"madebykiet.com"
+                        },
+                        {
+                            "type":"phone",
+                            "value":"9498361199"
+                        },
+                        {
+                            "type":"email",
+                            "value":"hoakiet98@gmail.com"
+                        },
+                        {
+                            "type":"location",
+                            "value":"Minneapolis, MN"
+                        }
+                    ]
+                },
+                {
+                    "type":"education",
+                    "values":[
+                                {
+                                    "type":"school",
+                                    "value":"University of Minnesota"
+                                },
+                                {
+                                    "type":"degree",
+                                    "value":"Bachelor of Science"
+                                },
+                                {
+                                    "type":"major",
+                                    "value":"Computer Science"
+                                },
+                                {
+                                    "type":"major",
+                                    "value":"Management Information Systems"
+                                },
+                                {
+                                    "type":"major",
+                                    "value":"Supply Chain and Operations Management"
+                                },
+                                {
+                                    "type":"minor",
+                                    "value":"Product Design"
+                                },
+                                {
+                                    "type":"location",
+                                    "value":"Minneapolis, MN"
+                                },
+                                {
+                                    "type":"date",
+                                    "value":"June 2020 - August 2020"
+                                },
+                                {
+                                    "type":"gpa",
+                                    "value":"3.914"
+                                },
+                                {
+                                    "type":"honors",
+                                    "value":"Dean's List"
+                                }
+                            ]
+                },
+                {
+                    "type":"experiences",
+                    "values":[
+                        {
+                            "type":"experience",
+                            "values":[
+                                {
+                                    "type":"employer",
+                                    "value":"Veritas Techonologies"
+                                },
+                                {
+                                    "type":"position",
+                                    "value":"Software Engineering Intern"
+                                },
+                                {
+                                    "type":"location",
+                                    "value":"Remote"
+                                },
+                                {
+                                    "type":"date",
+                                    "value":"June 2020 - August 2020"
+                                },
+                                {
+                                    "type":"descriptions",
+                                    "values":[
+                                        {
+                                            "type":"description",
+                                            "value":"Implement C/C++ memory error detection tool to flagship product of 500+ developers"
+                                        },
+                                        {
+                                            "type":"description",
+                                            "value":"Design and implement data structure of defect reporting pipeline"
+                                        },
+                                        {
+                                            "type":"description",
+                                            "value":"Configure build systems to add new tool, automated detection of 4000+ defects in production"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                        
+                    ]
+                }
+            ]
+            
+        }
+    ]
+}

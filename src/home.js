@@ -1,10 +1,14 @@
 import React from "react"
+import ResumeView from "./resumeView"
+
+const HOME_VIEW = 'homeView'
+const USER_ID = '0'
 
 export const Home = (props) => {
     const homeView = (
-        <h1>
-            Hello World
-        </h1>
+       <div className={HOME_VIEW}>
+           <ResumeView id={USER_ID}/>
+       </div>
     )
-    return homeView;
+    return homeView
 }
